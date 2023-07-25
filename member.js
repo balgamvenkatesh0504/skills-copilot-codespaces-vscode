@@ -1,9 +1,10 @@
-function skillsmember() {
-    var skills = ["HTML", "CSS", "JS", "PHP", "MySQL"];
-    var member = {
-        name: "John",
-        age: 25,
-        skills: skills
+function skillsMember() {
+    return {
+        restrict: 'E',
+        scope: {
+            member: '=',
+            skills: '='
+        },
+        templateUrl: 'templates/directives/skills-member.html'
     };
-    return member;
 }
